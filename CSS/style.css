@@ -60,9 +60,6 @@ nav {
     gap: 10px;
 
     align-self: start;
-
-
-
 }
 
 nav h2 {
@@ -76,8 +73,9 @@ nav h2 {
 
 nav a {
 
-    display: block;
-
+    display: flex;
+    flex-direction: column;
+    gap:10px;
     font-style: italic;
 
     background-color: #14213d;
@@ -97,6 +95,34 @@ nav a:hover {
     background-color: #c9a227;
     color: #0b1628;
     transform: translateY(-2px);
+}
+
+/* About */
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: start;
+}
+
+#about{
+    background-color: #FFFDF7;
+    border: 2px solid #c9a227;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+#about h2{
+    color: #14213D;
+    margin-top: 0;
+    border-bottom: 2px solid #c9a227;
+    padding-bottom: 5px;
+}
+
+#about p{
+    color: #444444;
+    font-size: 1rem;
 }
 
 
@@ -232,4 +258,57 @@ nav a:hover {
 
 .event-card p{
     color: #444444;
+}
+
+/* Footer */
+footer{
+    background-color: #0b1628;
+    color:#FFFDF7;
+
+    margin-top: 10px;
+    padding: 15px;
+
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+    text-align: center;
+}
+
+footer h2{
+    color:#c9a227;
+    margin-top: 0px;
+}
+
+footer p{
+    margin: 5px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-links a{
+    color: #FFFDF7;
+}
+
+.footer-links a:hover{
+    color: #c9a227;
+}
+.footer-contact{
+    color:#FFFDF7
+}
+
+.copyright{
+    grid-column: 1/4;
+    border-top: 2px solid #c9a227;
+
+    padding-top: 15px;
+    margin-top: 10px;
+
+    color:#D8D8D8;
+    font-size: .8rem;
 }
