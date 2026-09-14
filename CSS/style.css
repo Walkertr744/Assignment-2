@@ -19,7 +19,7 @@ body>header {
     text-align: center;
 
     border-radius: 5px;
-     border: 2px solid #c9a227;
+    border: 2px solid #c9a227;
 
     padding: 15px;
 
@@ -75,7 +75,7 @@ nav a {
 
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
     font-style: italic;
 
     background-color: #14213d;
@@ -98,14 +98,14 @@ nav a:hover {
 }
 
 /* About */
-aside{
+aside {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-self: start;
 }
 
-#about{
+#about {
     background-color: #FFFDF7;
     border: 2px solid #c9a227;
     border-radius: 5px;
@@ -113,14 +113,14 @@ aside{
     margin: 5px;
 }
 
-#about h2{
+#about h2 {
     color: #14213D;
     margin-top: 0;
     border-bottom: 2px solid #c9a227;
     padding-bottom: 5px;
 }
 
-#about p{
+#about p {
     color: #444444;
     font-size: 1rem;
 }
@@ -149,8 +149,9 @@ aside{
 
 #hero header {
     grid-column: 1/3;
+    text-align: center;
 
-   background-color: #14213D;
+    background-color: #14213D;
     color: #FFFDF7;
 }
 
@@ -252,18 +253,18 @@ aside{
     border-radius: 5px;
 }
 
-.event-card h3{
+.event-card h3 {
     color: #14213D
 }
 
-.event-card p{
+.event-card p {
     color: #444444;
 }
 
 /* Footer */
-footer{
+footer {
     background-color: #0b1628;
-    color:#FFFDF7;
+    color: #FFFDF7;
 
     margin-top: 10px;
     padding: 15px;
@@ -276,39 +277,56 @@ footer{
     text-align: center;
 }
 
-footer h2{
-    color:#c9a227;
+footer h2 {
+    color: #c9a227;
     margin-top: 0px;
 }
 
-footer p{
+footer p {
     margin: 5px;
 }
 
-.footer-links{
+.footer-links {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.footer-links a{
+.footer-links a {
     color: #FFFDF7;
 }
 
-.footer-links a:hover{
+.footer-links a:hover {
     color: #c9a227;
 }
-.footer-contact{
-    color:#FFFDF7
+
+.footer-contact {
+    color: #FFFDF7
 }
 
-.copyright{
+.copyright {
     grid-column: 1/4;
     border-top: 2px solid #c9a227;
 
     padding-top: 15px;
     margin-top: 10px;
 
-    color:#D8D8D8;
+    color: #D8D8D8;
     font-size: .8rem;
+}
+
+/* Media Quieries */
+@media (max-width: 900px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    #events{
+        grid-template-columns: 1fr;
+    }
+    footer{
+        grid-template-columns: 1fr;
+    }
 }
