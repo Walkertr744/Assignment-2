@@ -29,33 +29,20 @@ Semantic HTML
 
 Several semantic HTML elements were used throughout the website.
 
-<header>
 
-The <header> element is used for the main site header and for section headings. It identifies introductory content and headings for the page.
+The Header element is used for the main site header and for section headings. It identifies introductory content and headings for the page.
 
-<nav>
+The Nav element contains the site's navigation links. It provides a clear section for users to move between the home page, event information, and contact information.
 
-The <nav> element contains the site's navigation links. It provides a clear section for users to move between the home page, event information, and contact information.
+The Main element contains the primary content of each page. This separates the main page content from the header and footer.
 
-<main>
+The Section element is used to group related content, such as the hero section, event details, related events, and the About section.
 
-The <main> element contains the primary content of each page. This separates the main page content from the header and footer.
+The Article element is used for individual event cards. Each event card contains information that represents a separate event.
 
-<section>
+The Aside element is used for supporting content such as the sidebar navigation, About section, and event details.
 
-The <section> element is used to group related content, such as the hero section, event details, related events, and the About section.
-
-<article>
-
-The <article> element is used for individual event cards. Each event card contains information that represents a separate event.
-
-<aside>
-
-The <aside> element is used for supporting content such as the sidebar navigation, About section, and event details.
-
-<footer>
-
-The <footer> element contains contact information, navigation links, and copyright information for the website.
+The Footer element contains contact information, navigation links, and copyright information for the website.
 
 Sources
 
