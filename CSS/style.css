@@ -266,7 +266,7 @@ footer {
     background-color: #0b1628;
     color: #FFFDF7;
 
-    margin-top: 10px;
+    margin: 5px;
     padding: 15px;
 
     border-radius: 5px;
@@ -329,4 +329,157 @@ footer p {
     footer{
         grid-template-columns: 1fr;
     }
+}
+
+/* EVENT DETAILS PAGE */
+
+#event-hero-image{
+    border-radius: 5px;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+.event-page #hero{
+    background-color: #14213D;
+    color: #fffdf7;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: 1fr;
+
+    gap: 5px;
+
+    padding: 5px;
+
+    border: 2px solid #c9a227;
+    border-radius: 5px;
+
+    margin: 5px;
+}
+.event-page .event-details {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    grid-template-rows: 1fr;
+
+    gap: 5px;
+
+    margin: 5px;
+}
+
+.event-page .event-main {
+    background-color: #FFFDF7;
+
+    border: 2px solid #c9a227;
+
+    border-radius: 5px;
+
+    padding: 15px;
+}
+.event-page .event-main h2{
+    color: #14213D;
+
+}
+#register-button{
+    display: block;
+
+    background-color: #14213D;
+
+    color: #FFFDF7;
+
+    text-align: center;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    margin-top: 15px;
+}
+#register-button:hover{
+     background-color: #c9a227;
+
+    color: #0b1628;
+
+    transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+
+    /* Hero becomes one column */
+    .event-page #hero {
+        grid-template-columns: 1fr;
+    }
+
+    /* Event information moves below main content */
+    .event-page #event-details {
+        grid-template-columns: 1fr;
+    }
+
+    /* Smaller hero image */
+    #event-hero-image {
+        height: 300px;
+    }
+}
+
+
+
+.event-page #related-events {
+    margin: 5px;
+
+    background-color: #F4F0E6;
+
+    border: 2px solid #c9a227;
+    border-radius: 5px;
+
+    padding: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 5px;
+}
+
+.event-page #related-events header {
+    flex-basis: 100%;
+
+    background-color: #14213D;
+    color: #FFFDF7;
+
+    text-align: center;
+
+    border-radius: 5px;
+}
+
+.event-page #related-events .event-card {
+    flex: 1 1 250px;
+
+    background-color: #FFFDF7;
+
+    border: 2px solid #D8D0BE;
+    border-radius: 10px;
+
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+
+    gap: 10px;
+}
+
+.event-page #related-events .event-card img {
+    width: 100%;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
 }
