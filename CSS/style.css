@@ -483,3 +483,54 @@ footer p {
 
     border-radius: 5px;
 }
+
+/*Style for saved class in js*/
+.saved {
+    border: 5px solid #c9a227;   
+}
+
+#saved-events {
+    background-color: #FFFDF7;
+    border: 2px solid #c9a227;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 4px;
+
+    grid-column: 1/3;
+}
+
+#saved-events > h2 {
+    background-color: #14213D;
+    color:#FFFDF7;
+    text-align: center;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.event-card > button{
+    background-color: #14213D;
+    color:#FFFDF7;
+    border: 2px solid #c9a227;
+    border-radius: 2px;
+    padding: 8px 12px;
+}
+.event-card > button:hover{
+    background-color: #c9a227;
+    border: 2px solid #0b1628;
+    border-radius: 2px;
+    color: #0b1628;
+    transform: translateY(-2px);
+    cursor:pointer;
+}
+
+#saved-events > li {
+   padding: 8px;
+   margin: 4px;
+   background-color:#F4F0E6;
+}
+
+#saved-events > p {
+    color:#444444;
+    margin: 2px;
+    border-radius: 5px;
+}
