@@ -1,3 +1,5 @@
+"use strict"; //Tells java to be strict.
+
 const eventCards = document.querySelectorAll(".event-card");
 
 for(let indEvent of eventCards){ //For 1 at a time of event-card
